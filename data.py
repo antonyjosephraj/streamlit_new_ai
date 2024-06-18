@@ -144,20 +144,17 @@ import pickle
 #     "Pickups": pickups,
 #     "Drops": drops,
 # }
-st.title('AI INTRODUCTION')      
-st.text('Artificial intelligence (AI) is revolutionizing the way we interact with technology and transforming various industries. At its core, artificial intelligence involves the development of computer systems that can perform tasks typically requiring human intelligence')
+st.title('POC')      
+st.text('Identify the specifics of data input and delineate the operational functionalities.')
 
 st.image('ai.jpg')
 
 
-st.markdown('Dataset :')   
-data=pd.read_csv('sample_data.csv')    
-st.write(data.head())   
-
-
-import streamlit as st
-import pandas as pd
-import numpy as np
+st.title("CHART'S")      
 data=pd.read_csv('data_inputs.csv')    
 df= pd.DataFrame(   data,    columns=['Invested Amount', 'Multiple at Exit'])
 st.line_chart(df)
+
+st.markdown('Dataset :')   
+data=pd.read_csv('sample_data.csv')    
+st.write(data.head()) 
