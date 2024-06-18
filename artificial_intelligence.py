@@ -136,6 +136,7 @@ import streamlit as st
 import time
 import pandas as pd
 import numpy as np
+import matplotlib.pyplot as plt
 import pickle
 
 # # Define sidebar menu options
@@ -152,4 +153,11 @@ st.image('ai.jpg')
 st.markdown('Dataset :')   
 data=pd.read_csv('sample_data.csv')    
 st.write(data.head())   
-    
+
+
+import streamlit as st
+import pandas as pd
+import numpy as np
+data=pd.read_csv('data_inputs.csv')    
+df= pd.DataFrame(   data,    columns=['Invested Amount', 'Multiple at Exit'])
+st.line_chart(df)
